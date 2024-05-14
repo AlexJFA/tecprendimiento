@@ -48,11 +48,6 @@ button {
   border-color: var(--white);
 }
 
-/* .techweb{
-  width: 5rem;
-  height: 3rem;
-} */
-
 /* ----  FOOTER  ----- */
 
 .footer {
@@ -93,4 +88,31 @@ button {
 
 .btn-outline-secondary {
   color: var(--white);
+}
+
+.btn-footer {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  /* Add your mobile styles here */
+
+  .contet-text-footer {
+  }
+
+  .footer-title-div {
+    margin: 0;
+  }
+
+  .redes,
+  .contact-footer,
+  .terminosServicio,
+  .derechosReservados {
+    margin-left: 0rem;
+  }
+
+.form-footer h3{
+  text-align: left;
+}
+
 }
