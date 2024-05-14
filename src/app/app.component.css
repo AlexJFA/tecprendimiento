@@ -86,6 +86,10 @@ button {
   margin-right: 0.5rem;
 }
 
+.form-footer {
+  padding: 0 8rem;
+}
+
 .btn-outline-secondary {
   color: var(--white);
 }
@@ -111,8 +115,11 @@ button {
     margin-left: 0rem;
   }
 
-.form-footer h3{
-  text-align: left;
-}
+  .form-footer h3 {
+    text-align: left;
+  }
 
+  .form-footer {
+    padding: 0;
+  }
 }
