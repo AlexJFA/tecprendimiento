@@ -1,40 +1,50 @@
-<div class="container-fluid container-Faq">
-  <div class="title">
-    <h2>Preguntas Ferecuentes</h2>
-    <div class="input-group mb-3 px-5">
+<div class="row container-fluid container-Faq">
+  <div class="col-12 py-4">
+    <h2 class="title"><b>Preguntas Ferecuentes</b></h2>
+  </div>
+
+  <div class="col-12 col-lg-3 container-search">
+    <div class="input-group mb-3">
       <input
         type="text"
-        class="form-control rounded-start-pill"
-        placeholder="Buscar"
-        aria-label="@example.com"
+        class="form-control search rounded-start-pill border-secondary py-3 mb-3"
+        placeholder="   Buscar"
+        aria-label="Buscar"
         aria-describedby="button-addon2"
-      /> 
+      />
       <button
-        class="btn btn-footer rounded-end-pill"
+        class="btn btn-footer rounded-end-pill border-secondary py-3 mb-3"
         type="button"
         id="button-addon2"
       >
-      <i class="bi bi-search"></i>
+        <i class="bi bi-search"></i>
       </button>
     </div>
+  </div>
+
+  <div class="col-12 conatiner-paragraph my-3">
     <p>
       orem ipsum dolor et amis lorem ipsum dolLorem ipsum dolor et amis lorem
       ipsum dolLorem ipsum dolor et amis lorem ipsum dolLorem ipsum dolor et
-      amis lorem ipsum dol
+      amis lorem ipsum dol orem ipsum dolor et amis lorem ipsum dolLorem ipsum
+      dolor et amis lorem ipsum dolLorem ipsum dolor et amis lorem ipsum
+      dolLorem ipsum dolor et amis lorem ipsum dol orem ipsum dolor et amis
+      lorem ipsum dolLorem ipsum dolor et amis lorem ipsum dolLorem ipsum dolor
+      et amis lorem ipsum dolLorem ipsum dolor et amis lorem ipsum dol
     </p>
   </div>
 
-  <div class="questions">
-    <div>
+  <div class="col-12 col-md-7 questions">
+    <div class="w-100">
       <button
-        class="btn btn-secondary dropdown-toggle rounded-pill"
+        class="btn dropdown-toggle rounded-pill mb-3 w-100"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#collapseExample"
-        aria-expanded="false"
+        aria-expanded="true"
         aria-controls="collapseExample"
       >
-        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ?
+        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ? <br />
       </button>
 
       <div class="collapse" id="collapseExample">
@@ -47,14 +57,14 @@
     </div>
     <div>
       <button
-        class="btn btn-secondary dropdown-toggle rounded-pill"
+        class="btn dropdown-toggle rounded-pill mb-3 w-100"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#collapseExample1"
         aria-expanded="false"
         aria-controls="collapseExample"
       >
-        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ?
+        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ?<br />
       </button>
 
       <div class="collapse" id="collapseExample1">
@@ -67,17 +77,17 @@
     </div>
     <div>
       <button
-        class="btn btn-secondary dropdown-toggle rounded-pill"
+        class="btn dropdown-toggle rounded-pill mb-3 w-100"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#collapseExample2"
+        data-bs-target="#collapseExample1"
         aria-expanded="false"
         aria-controls="collapseExample"
       >
-        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ?
+        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ?<br />
       </button>
 
-      <div class="collapse" id="collapseExample2">
+      <div class="collapse" id="collapseExample1">
         <div class="card card-body">
           Some placeholder content for the collapse component. This panel is
           hidden by default but revealed when the user activates the relevant
@@ -87,57 +97,17 @@
     </div>
     <div>
       <button
-        class="btn btn-secondary dropdown-toggle rounded-pill"
+        class="btn dropdown-toggle rounded-pill mb-3 w-100"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#collapseExample3"
+        data-bs-target="#collapseExample1"
         aria-expanded="false"
         aria-controls="collapseExample"
       >
-        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ?
+        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ?<br />
       </button>
 
-      <div class="collapse" id="collapseExample3">
-        <div class="card card-body">
-          Some placeholder content for the collapse component. This panel is
-          hidden by default but revealed when the user activates the relevant
-          trigger.
-        </div>
-      </div>
-    </div>
-    <div>
-      <button
-        class="btn btn-secondary dropdown-toggle rounded-pill"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseExample4"
-        aria-expanded="false"
-        aria-controls="collapseExample"
-      >
-        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ?
-      </button>
-
-      <div class="collapse" id="collapseExample4">
-        <div class="card card-body">
-          Some placeholder content for the collapse component. This panel is
-          hidden by default but revealed when the user activates the relevant
-          trigger.
-        </div>
-      </div>
-    </div>
-    <div>
-      <button
-        class="btn btn-secondary dropdown-toggle rounded-pill"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseExample5"
-        aria-expanded="false"
-        aria-controls="collapseExample"
-      >
-        ¿Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ?
-      </button>
-
-      <div class="collapse" id="collapseExample5">
+      <div class="collapse" id="collapseExample1">
         <div class="card card-body">
           Some placeholder content for the collapse component. This panel is
           hidden by default but revealed when the user activates the relevant
@@ -147,16 +117,24 @@
     </div>
   </div>
 
-  <p>
-    “Cambia las cosas antes que tengas que hacerlo” <br />
-    - Jack Welch
-  </p>
+  <div class="jack my-3">
+    <p class="text-end">
+      “Cambia las cosas antes que tengas que hacerlo” <br />
+      - Jack Welch
+    </p>
+  </div>
+</div>
 
-  <div class="notfound">
-    <h2>¿No encontraste la respuesta que buscabas?</h2>
-    <p>¡Contacta con nuestro equipo de asesores!</p>
-    <button type="button" class="btn btn-secondary rounded-pill">
-      Contacta con un asesor
+<div class="notfound ">
+  <h2 class="text-center notfound-title">
+    <b>¿No encontraste la respuesta que buscabas?</b>
+  </h2>
+  <p class="text-center notfound-paragraph my-4">
+    ¡Contacta con nuestro equipo de asesores!
+  </p>
+  <div class="d-flex aling-items-center justify-content-center">
+    <button type="button" class="btn btn-secondary rounded-pill py-3 px-5">
+      <b>Contacta con un asesor</b>
     </button>
   </div>
 </div>
