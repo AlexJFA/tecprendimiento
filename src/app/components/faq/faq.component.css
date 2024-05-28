@@ -8,28 +8,30 @@
   margin: 0;
 }
 
+/* ----- seccion element search ----- */
 .search,
 .btn {
   background-color: var(--gray3);
 }
 
+/* ----- seccion questions ----- */
 .questions .btn {
   background-color: var(--gray3);
   margin: 0;
   padding: 0;
 }
-
 .card {
   background-color: transparent;
   color: var(--white);
   border-color: transparent;
 }
 
+/* ----- seccion not fount ----- */
 .notfound .btn {
   background-color: var(--blue);
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/*  --------------------------------  Small devices (landscape phones, 350px and up) -------------------------------------- */
 @media (min-width: 350px) {
   .container-Faq {
     font-size: large;
@@ -37,6 +39,7 @@
     padding: 0;
   }
 
+  /* ----- seccion element title----- */
   .title {
     font-size: 2.5rem;
     text-align: center;
@@ -46,15 +49,16 @@
     text-align: justify;
   }
 
+  /* ----- seccion questions ----- */
   .questions {
     margin: 0;
     padding: 0 1rem;
   }
 
+  /* ----- seccion not fount ----- */
   .notfound {
     margin: 5rem 0;
   }
-
   .notfound-title {
     font-size: xx-large;
   }
@@ -63,22 +67,24 @@
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* --------------------------  Medium devices (tablets, 768px and up) -------------------------------- */
 @media (min-width: 768px) {
+  /* ----- seccion title ----- */
   .title {
     font-size: 3rem;
     text-align: start;
   }
 
+  /* ----- seccion questions ----- */
   .questions {
     margin: 0;
     padding: 0;
   }
 
+  /* ----- seccion not fount ----- */
   .notfound {
     margin: 3.5rem 0;
   }
-
   .notfound-title {
     font-size: 2rem;
   }
@@ -87,16 +93,15 @@
   }
 }
 
-/*  Large devices (desktops, 992px and up) */
+/* ---------------------------- Large devices (desktops, 992px and up) ----------------------------------- */
 @media (min-width: 992px) {
   .container-Faq {
     font-size: larger;
   }
-
+  /* ----- seccion title ----- */
   .title {
     font-size: 3rem;
     margin: 0 2rem;
-
   }
 
   .questions,
@@ -105,32 +110,28 @@
     margin: 0 2rem;
   }
 
-  .jack{
+  /* ----- seccion Jack ----- */
+  .jack {
     padding-right: 3rem;
   }
 
   .conatiner-paragraph {
     padding-right: 5rem;
   }
+
+  /* ----- seccion questions ----- */
   .questions .btn {
     font-size: 1.3rem;
   }
+
+  /* ----- seccion not found ----- */
   .notfound-title {
     font-size: 5rem;
   }
   .notfound-paragraph {
     font-size: xx-large;
   }
-
   .notfound button {
     font-size: 1.3rem;
   }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
 }
