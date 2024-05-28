@@ -90,11 +90,13 @@
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .container-Faq {
-    font-size: x-large;
+    font-size: larger;
   }
 
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin: 0 2rem;
+
   }
 
   .questions,
@@ -102,11 +104,16 @@
   .conatiner-paragraph {
     margin: 0 2rem;
   }
+
+  .jack{
+    padding-right: 3rem;
+  }
+
   .conatiner-paragraph {
     padding-right: 5rem;
   }
   .questions .btn {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .notfound-title {
     font-size: 5rem;
