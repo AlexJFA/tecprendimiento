@@ -17,8 +17,28 @@
 }
 
 /* --------------  seccion of  cards  ---------- */
-.card {
-  background-image: url("../../../assets/images/ProductosTarjeta-min.png");
+.card1 {
+  background-image: url("../../../assets/images/card1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+.card2 {
+  background-image: url("../../../assets/images/card2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+.card3 {
+  background-image: url("../../../assets/images/card3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
