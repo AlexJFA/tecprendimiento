@@ -1,5 +1,5 @@
 <div class="container-services">
-    <!----------------  seccion of title  ------------------>
+  <!----------------  seccion of title  ------------------>
   <div class="container-title">
     <h2 class="title py-3">
       <b> Ayudamos al éxito a través de la tecnología</b>
@@ -163,12 +163,32 @@
       </div>
     </div>
 
-    <!----------------  seccion of brands ------------------>
-    <div class="col-12 brands1">
-      <img src="../../../assets/images/LANDING-min.png" alt="" />
-    </div>
-    <div class="col-12 brands2">
-      <img src="../../../assets/images/LANDING-min.png" alt="" />
-    </div>
+    <!----------------  seccion of carousel of brands ------------------>
+
+    <!--  carousel 1  -->
+    <ngx-slick-carousel
+      class="carousel carousel-brands1"
+      #slickModal="slick-carousel"
+      [config]="slideConfig"
+    >
+      @for (slide of slides; track slide){
+      <div ngxSlickItem class="slide">
+        <img src="{{ slide.img }}" alt="slide image" />
+      </div>
+      }
+    </ngx-slick-carousel>
+
+    <!--  carousel 2  -->
+    <ngx-slick-carousel
+      class="carousel carousel-brands2"
+      #slickModal="slick-carousel"
+      [config]="slideConfig2"
+    >
+      @for (slide of slides2; track slide){
+      <div ngxSlickItem class="slide2">
+        <img src="{{ slide.img }}" alt="slide image" />
+      </div>
+      }
+    </ngx-slick-carousel>
   </div>
 </div>
