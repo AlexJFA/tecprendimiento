@@ -51,7 +51,7 @@ export class ServicesComponent {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -104,7 +104,7 @@ export class ServicesComponent {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,

@@ -104,9 +104,22 @@ img {
 
 /* CUSTOMERS BRANDS CAROUSEL   */
 
-.clientBrands {
-  margin: 2rem 2rem 0 2rem;
+.carousel {
+  background-color: var(--white);
 }
+
+.slide {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.slide img {
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem 1rem;
+
+}
+
 
 /* <!-- BANNER OF WHAT INCLUDES --> */
 
@@ -204,18 +217,20 @@ img {
     margin: 0;
     text-align: center;
   }
+    /* --------------  seccion of  bransds carousel ---------- */
 
-  /* CUSTOMERS BRANDS CAROUSEL   */
-  .clientBrands {
-    margin-top: 0;
-    margin-bottom: 2rem;
-  }
-  .clientBrands h4 {
-    font-size: 1.8rem;
-  }
-  .carousel-item {
-    height: 7rem;
-  }
+    .slide img {
+      height: 7rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .slide2 img {
+      width: 100%;
+      height: 6rem;
+      padding: 0.5rem 1rem;
+    
+    }
+
 
   /* <!-- BANNER OF WHAT INCLUDES --> */
   .whatIncludes {

@@ -116,7 +116,7 @@
       <h4>Marcas que Confian en nuestro trabajo:</h4>
     </div>
 
-    <div
+    <!-- <div
       id="carouselExampleSlidesOnly"
       class="carousel slide"
       data-bs-ride="carousel"
@@ -144,7 +144,21 @@
           />
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <!--  carousel 1  -->
+    <ngx-slick-carousel
+      class="carousel carousel-brands1"
+      #slickModal="slick-carousel"
+      [config]="slideConfig"
+    >
+      @for (slide of slides; track slide){
+      <div ngxSlickItem class="slide">
+        <img src="{{ slide.img }}" alt="slide image" />
+      </div>
+      }
+    </ngx-slick-carousel>
+
   </section>
 
   <!-- BANNER OF WHAT INCLUDES -->
