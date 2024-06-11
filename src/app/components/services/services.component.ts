@@ -37,7 +37,7 @@ export class ServicesComponent {
     slidesToShow: 5,
     slidesToScroll: 1,
     slickPlay: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     infinite: true,
     dots: false,
@@ -53,6 +53,7 @@ export class ServicesComponent {
       {
         breakpoint: 900,
         settings: {
+          autoplay: true,
           slidesToShow: 3,
           slidesToScroll: 1,
         },
@@ -60,6 +61,7 @@ export class ServicesComponent {
       {
         breakpoint: 480,
         settings: {
+          autoplay: true,
           slidesToShow: 2,
           slidesToScroll: 1,
         },
@@ -90,7 +92,7 @@ export class ServicesComponent {
     slidesToShow: 5,
     slidesToScroll: 1,
     slickPlay: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     infinite: true,
     dots: false,
@@ -106,6 +108,7 @@ export class ServicesComponent {
       {
         breakpoint: 900,
         settings: {
+          autoplay: true,
           slidesToShow: 3,
           slidesToScroll: 1,
         },
@@ -113,6 +116,7 @@ export class ServicesComponent {
       {
         breakpoint: 480,
         settings: {
+          autoplay: true,
           slidesToShow: 2,
           slidesToScroll: 1,
         },
