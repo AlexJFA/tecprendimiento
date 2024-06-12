@@ -57,5 +57,10 @@
 @media (min-width: 992px) {
   .container-blog {
     font-size: larger;
+    padding: 1rem 4rem;
+  }
+
+  .container p{
+    font-size: larger;
   }
 }
