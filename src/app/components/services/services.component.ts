@@ -24,7 +24,7 @@ export class ServicesComponent {
     { img: '../../../assets/images/Logos/OdontoMigue.png' },
     { img: '../../../assets/images/Logos/Alactus.png' },
     { img: '../../../assets/images/Logos/Agathos .png' },
-    { img: '../../../assets/images/Logos/ms-consulting.jpg' },
+    { img: '../../../assets/images/Logos/ms-consulting.png' },
     { img: '../../../assets/images/Logos/frank-Adam.png' },
   ];
 
@@ -77,10 +77,10 @@ export class ServicesComponent {
   public slides2 = [
     { img: '../../../assets/images/Logos/logo3.png' },
     { img: '../../../assets/images/Logos/HIAS.png' },
-    { img: '../../../assets/images/Logos/denaro.png' },
     { img: '../../../assets/images/Logos/tanira.png' },
     { img: '../../../assets/images/Logos/frank-Adam.png' },
     { img: '../../../assets/images/Logos/logo aszero .png' },
+    { img: '../../../assets/images/Logos/denaro.png' },
   ];
 
   // Slick carousel configuration
