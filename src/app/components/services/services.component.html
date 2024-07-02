@@ -88,43 +88,115 @@
 
   <div class="paragraph mb-5">
     <p>
-      Our services are the best! Lorem ipsum dolor et amis lorem ipsum dolLorem
-      ipsum dolor et amis lorem ipsum dolLorem ipsum dolor et amis lorem ipsum
-      dollorem ipsum dolLorem ipsum dolor et amis lorem ipsum dol. Our services
-      are the best! Lorem ipsum dolor et amis lorem ipsum dolLorem ipsum dolor
-      et amis lorem ipsum dolLorem ipsum dolor et amis lorem ipsum dollorem
-      ipsum dolLorem ipsum dolor et amis lorem ipsum dol.
+      Contamos con una gama de productos innovadores diseñados para mejorar tu
+      eficiencia y organización. Conoce nuestras NFContact, tarjetas
+      inteligentes que facilitan la creación de redes de contacto con solo
+      acercarlas al celular de tus potenciales contactos. Además, contamos con
+      un sistema analógico de index-cards para la gestión de tareas, llamados
+      NOTIK, que te permiten organizar tus proyectos diarios de manera efectiva
+      mientras disfrutas de una pausa del tiempo en pantalla.
     </p>
+
+    <div class="d-flex justify-content-center aling-items-center mt-5">
+      <button class="btn btnServices">
+        <b>Contacta con nuestro equipo</b>
+      </button>
+    </div>
   </div>
 
   <!----------------  seccion of products ------------------>
   <div class="products text-center">
+    <!----------------  seccion of products HERADBOARD ------------------>
     <div class="row">
-      <h5 class="col border py-2">Tarjeta NFContac</h5>
-      <h5 class="col border py-2">Sistema de apuntes Notik</h5>
-      <h5 class="col border py-2">Automatización de procesos con I.A.</h5>
-      <h5 class="col border py-2">Consultoría en herramientas de I.A.</h5>
-      <h5 class="col border py-2">Proyectos de Software & Web</h5>
+      <h5
+        class="col border py-2 px-5 fs-4 nfc"
+        [ngStyle]="this.nfContactStyle"
+        (click)="
+          this.nfContact = true;
+          this.systemNotik = false;
+          this.automatitationIA = false;
+          this.consultingIA = false;
+          this.sofwareWeb = false;
+          setCurrentStyles()
+        "
+      >
+        Tarjeta NFContac
+      </h5>
+      <h5
+        class="col border py-2 px-5 fs-4 notik"
+        [ngStyle]="this.systemNotikStyle"
+        (click)="
+          this.nfContact = false;
+          this.systemNotik = true;
+          this.automatitationIA = false;
+          this.consultingIA = false;
+          this.sofwareWeb = false;
+          setCurrentStyles()
+        "
+      >
+        Sistema de apuntes Notik
+      </h5>
+      <h5
+        class="col border py-2 px-5 fs-4 a-ia"
+        [ngStyle]="this.automatitationIAStyle"
+        (click)="
+          this.nfContact = false;
+          this.systemNotik = false;
+          this.automatitationIA = true;
+          this.consultingIA = false;
+          this.sofwareWeb = false;
+          setCurrentStyles()
+        "
+      >
+        Automatización de procesos con I.A.
+      </h5>
+      <h5
+        class="col border py-2 px-5 fs-4 c-ia"
+        [ngStyle]="this.consultingIAStyle"
+        (click)="
+          this.nfContact = false;
+          this.systemNotik = false;
+          this.automatitationIA = false;
+          this.consultingIA = true;
+          this.sofwareWeb = false;
+          setCurrentStyles()
+        "
+        
+      >
+        Consultoría en herramientas de I.A.
+      </h5>
+      <h5
+        class="col border py-2 px-5 fs-4 web"
+        [ngStyle]="this.sofwareWebStyle"
+        (click)="
+          this.nfContact = false;
+          this.systemNotik = false;
+          this.automatitationIA = false;
+          this.consultingIA = false;
+          this.sofwareWeb = true;
+          setCurrentStyles()
+        "
+      >
+        Proyectos de Software & Web
+      </h5>
     </div>
+
+      <!----------------  seccion of products CONTENT ------------------>
+    @if (nfContact) {
     <div class="row">
       <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
-        <h2>NFContact Tarjeta Inteligente</h2>
+        <h2 class="my-5"><b> NFContact Tarjeta Inteligente</b></h2>
         <p>
           Muestra al mundo quién eres con nuestras tarjetas de negocio
           NFContact. Simplifica el compartir tu información con solo un tap e
           impresiona a tus contactos. Destaca con una herramienta que refleja tu
           profesionalismo y visión innovadora.
         </p>
-        <button
-          class="btn dropdown-toggle rounded-pill mb-3"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseExample"
-          aria-expanded="true"
-          aria-controls="collapseExample"
-        >
-        Obtén la tuya
-        </button>
+        <div class="containerbtnNCF d-flex justify-content-start">
+          <button class="btn btnNFC rounded-pill mb-3" type="button">
+            <b> ► Obtén la tuya </b>
+          </button>
+        </div>
       </div>
       <div class="col-12 col-lg-6">
         <img
@@ -134,12 +206,116 @@
         />
       </div>
     </div>
+    } 
+    
+    @if (systemNotik) {
+    <div class="row">
+      <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
+        <h2 class="my-5"><b> Sistema de apuntes NOTIK</b></h2>
+        <p>
+          Organiza tu día y tus proyectos con nuestro sistema de apuntes en
+          index cards estilo analógico NOTIK. Desconéctate digitalmente y
+          potencia tu memoria con lo táctil y tangible.
+        </p>
+        <div class="containerbtnNCF d-flex justify-content-start">
+          <button class="btn btnNFC rounded-pill mb-3" type="button">
+            <b> ► Obtén la tuya </b>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <img
+          src="../../../assets/images/notik.png"
+          alt=""
+          class="w-100 h-100"
+        />
+      </div>
+    </div>
+    } 
+    
+    @if (automatitationIA) {
+    <div class="row">
+      <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
+        <h2 class="my-5"><b> Automatización de procesos con I.A.</b></h2>
+        <p>
+          Optimiza tus procesos operativos con flujos de inteligencia artificial
+          que te permiten automatizar tareas y mejorar la eficiencia de tu
+          empresa.
+        </p>
+        <div class="containerbtnNCF d-flex justify-content-start">
+          <button class="btn btnNFC rounded-pill mb-3" type="button">
+            <b> ► Obtén la tuya </b>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <img
+          src="../../../assets/images/automatizacion.png"
+          alt=""
+          class="w-100 h-100"
+        />
+      </div>
+    </div>
+    } 
+    
+    @if (consultingIA) {
+    <div class="row">
+      <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
+        <h2 class="my-5"><b> Consultoría en herramientas de I.A.</b></h2>
+        <p>
+          Empodera a tu equipo y capacítalos en el uso de herramientas de
+          inteligencia artificial para mejorar la eficiencia y productividad de
+          tu empresa.
+        </p>
+        <div class="containerbtnNCF d-flex justify-content-start">
+          <button class="btn btnNFC rounded-pill mb-3" type="button">
+            <b> ► Obtén la tuya </b>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <img
+          src="../../../assets/images/consultoria.png"
+          alt=""
+          class="w-100 h-100"
+        />
+      </div>
+    </div>
+    } 
+    
+    @if (sofwareWeb) {
+    <div class="row">
+      <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
+        <h2 class="my-5"><b> Proyectos de Software & Web</b></h2>
+        <p>
+          Desarrolla tu proyecto de software o web con nuestro equipo de
+          expertos. Diseñamos soluciones a la medida de tus necesidades y
+          objetivos.
+        </p>
+        <div class="containerbtnNCF d-flex justify-content-start">
+          <button class="btn btnNFC rounded-pill mb-3" type="button">
+            <b> ► Obtén la tuya </b>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <img
+          src="../../../assets/images/software.png"
+          alt=""
+          class="w-100 h-100"
+        />
+      </div>
+    </div>
+    }
+
   </div>
 
+  <!----------------  seccion of IMPACT ------------------>
   <div class="row conatiner-stadistic">
-    <h2 class="col-12 col-lg-8"><b>Impacto real en nuestros clientes.</b></h2>
+    <h2 class="col-12 col-lg-8 text-start"><b>Impacto real en nuestros clientes.</b></h2>
     <p class="col-12 col-lg-8">
-      Revolucionamos la forma en que las empresas se conectan y crecen, a través de nuestros productos y servicios.
+      Revolucionamos la forma en que las empresas se conectan y crecen, a través
+      de nuestros productos y servicios.
     </p>
   </div>
 

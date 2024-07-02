@@ -35,6 +35,11 @@
   transition: calc(0.5s);
 }
 
+.paragraphJessica {
+  
+  font-family: "Prompt", sans-serif;
+}
+
 /*  --------------------------------  Small devices (landscape phones, 350px and up) -------------------------------------- */
 @media (min-width: 350px) {
   .container-blog {

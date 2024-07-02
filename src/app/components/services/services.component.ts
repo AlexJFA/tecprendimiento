@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { NgStyle } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 // Import Slick carousel module
 import { SlickCarouselModule } from 'ngx-slick-carousel';
@@ -9,11 +10,24 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [SlickCarouselModule],
+  imports: [SlickCarouselModule, NgStyle],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css',
 })
-export class ServicesComponent {
+export class ServicesComponent implements OnInit {
+  //Variables products Headboard-------------------------------
+  public nfContactStyle: Record<string, string> = {};
+  public systemNotikStyle: Record<string, string> = {};
+  public automatitationIAStyle: Record<string, string> = {};
+  public consultingIAStyle: Record<string, string> = {};
+  public sofwareWebStyle: Record<string, string> = {};
+
+  public nfContact: boolean = true;
+  public systemNotik: boolean = false;
+  public automatitationIA: boolean = false;
+  public consultingIA: boolean = false;
+  public sofwareWeb: boolean = false;
+
   // First carousel -------------------------------
 
   /**
@@ -123,4 +137,33 @@ export class ServicesComponent {
       },
     ],
   };
+
+  ngOnInit(): void {
+    this.setCurrentStyles();
+  }
+
+  // products Headboard -------------------------------
+
+  setCurrentStyles() {
+    // CSS styles: set per current state of component properties
+    this.nfContactStyle = {
+      'background-color': this.nfContact ? '#222222' : '#575757',
+    };
+
+    this.systemNotikStyle = {
+      'background-color': this.systemNotik ? '#222222' : '#575757',
+    };
+
+    this.automatitationIAStyle = {
+      'background-color': this.automatitationIA ? '#222222' : '#575757',
+    };
+
+    this.consultingIAStyle = {
+      'background-color': this.consultingIA ? '#222222' : '#575757',
+    };
+
+    this.sofwareWebStyle = {
+      'background-color': this.sofwareWeb ? '#222222' : '#575757',
+    };
+  }
 }
