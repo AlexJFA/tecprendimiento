@@ -30,5 +30,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this._router.navigateByUrl('/home');
     // this._router.navigateByUrl('/services');
+    // this._router.navigateByUrl('/fqa');
   }
 }
