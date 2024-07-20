@@ -1,12 +1,12 @@
 <!----------------  container firt banner  ------------>
-<div class="row container-fluid container-blog">
+<div class="row container-fluid container-blog py-5">
   <!--  title -->
-  <div class="col-12 py-4">
+  <div class="col-12 py-3">
     <h2 class="title"><b>Blog</b></h2>
   </div>
 
   <!---------------- element of search ------------------>
-  <div class="col-12 col-lg-3 container-search">
+  <!-- <div class="col-12 col-lg-3 container-search">
     <div class="input-group mb-3">
       <input
         type="text"
@@ -23,10 +23,10 @@
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </div>
+  </div> -->
 
   <!------------------ paragraph -------------->
-  <div class="col-12 conatiner-paragraph my-3">
+  <div class="col-12 conatiner-paragraph mb-4">
     <p>
       Explora nuestro blog para descubrir artículos informativos y sobre
       nuestros proyectos, nuestro impacto y la colaboración que realizamos con
@@ -36,8 +36,8 @@
 </div>
 
 <!--------  container Hias  ------------------------->
-<div class="container my-5 hias">
-  <div class="row">
+<div class="container-fluid mt-5 mb-0 hias d-flex justify-content-center">
+  <div class="row container">
     <div class="col-12 col-lg-6 my-auto">
       <h2><b>HIAS Perú y su apuesta por las tarjetas inteligentes.</b></h2>
       <p class="">
@@ -47,27 +47,29 @@
         mejorada.
       </p>
       <p class="">20 de Mayo, 2024.</p>
+      <!--------  container ver mas  sub-Pagina------------------------->
+      @if (!verMas) {
+      <div class="arrow text-center">
+        <h3 class="m-0 p-0">Ver más...</h3>
+        <button
+          class="border-0 bg-transparent text-center m-0 p-0"
+          (click)="verMas = true"
+        >
+          <i class="bi bi-arrow-down-short p-0"></i>
+        </button>
+      </div>
+      }
     </div>
+
     <div class="col-12 col-lg-6 container-img">
       <img src="../../../assets/images/hias2.png" alt="IA" class="img-fluid" />
     </div>
   </div>
 </div>
 
-<!--------  container ver mas  sub-Pagina------------------------->
-@if (!verMas) {
-<div class="arrow text-center">
-  <h3 class="m-0">Ver más...</h3>
-  <button
-    class="border-0 bg-transparent text-center m-0 p-0"
-    (click)="verMas = true"
-  >
-    <i class="bi bi-arrow-down-short"></i>
-  </button>
-</div>
-} @else {
-<div class="container my-5">
-  <div class="row">
+@if (verMas) {
+<div class="container-fluid my-5 d-flex justify-content-center">
+  <div class="row container">
     <!--------  container desarrollo de la IA  ------------------------->
     <!-- <p class="text-end" >20 Mayo, 2024 </p> -->
     <div class="col-12">
@@ -151,7 +153,7 @@
   </div>
 </div>
 
-<div class="arrow text-center">
+<div class="arrow text-center mb-3">
   <button
     class="border-0 bg-transparent text-center m-0 p-0"
     (click)="verMas = false"

@@ -31,6 +31,12 @@
   background-color: var(--blue);
 }
 
+.btnContact a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+
 /*  --------------------------------  Small devices (landscape phones, 350px and up) -------------------------------------- */
 @media (min-width: 350px) {
   .container-Faq {

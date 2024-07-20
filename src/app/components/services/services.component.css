@@ -48,7 +48,7 @@
   margin: 0.5rem;
 }
 .card-title {
-  margin-bottom: 12rem;
+  margin-bottom: 14rem;
 }
 .card-text {
   margin: 0;
@@ -73,6 +73,12 @@
   box-shadow: 0 0 10px 0 rgba(207, 3, 139, 0.9);
 }
 
+.btnServices a {
+  color: var(--gray2);
+  text-decoration: none;
+}
+
+
 /* --------------  seccion of  products  ---------- */
 .products {
   background-color: var(--gray2);
@@ -86,6 +92,12 @@
 .container-content-product .btn {
   color: var(--white);
   font-size: x-large;
+}
+
+.container-content-product a {
+  color: var(--white);
+  text-decoration: none;
+
 }
 
 /* --------------  seccion of  products  ---------- */

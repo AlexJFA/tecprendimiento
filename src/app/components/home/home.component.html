@@ -3,9 +3,9 @@
   <section class="row bannerPresentation">
     <div class="col-12 col-md-6 col-text">
       <!-- <h2 class="sub-title ps-5 pt-5"> -->
-      <h2 class="sub-title">Conecta al instante <br />con un solo toque.</h2>
+      <h2 class="sub-title  col-12">Conecta al instante <br />con un solo toque.</h2>
       <!-- <p class="paragrph-title ps-5 pt-2 pe-4"> -->
-      <p class="paragrph-title">
+      <p class="paragrph-title col-12">
         Nuestras tarjetas NFC te permiten compartir tu información profesional
         de manera rápida y eficaz. ¡Genera networking en segundos! Solo acerca
         tu tarjeta a un dispositivo celular y comparte todas tus redes al
@@ -13,11 +13,16 @@
       </p>
       <div class="buttons-title ps-5 me-5">
         <button type="button" class="btn btn1 fs-5 mt-2 mb-1 col-12 col-lg-6">
-          <b>Solicita la tuya</b>
+          <a
+            href="https://wa.me/+51936321753?text=Me%20gustaría%20saber%20más%20información%20sobre%20las%20tarjetas%20NFC."
+            target="_blank"
+            ><b>Solicita la tuya</b></a
+          >
         </button>
         <button
           type="button"
           class="btn btn-outline-dark btn2 fs-5 col-12 col-lg-6"
+          (click)="redirectServices()"
         >
           <i class="bi bi-caret-right-fill"></i>
           <b>Conoce Más</b>
@@ -35,7 +40,7 @@
 
   <!-- BANNER OF  WHY USE OUR PRODUCT -->
   <section
-    class="container-fluid banner-ourProduct text-center my-5 mx-0 px-3 py-5"
+    class="container-fluid banner-ourProduct text-center  mx-0 px-3 py-5"
   >
     <div class="content-OP">
       <h2 class="content-OP-title mt-5">
@@ -78,7 +83,7 @@
   </section>
 
   <!-- BANNER OF BENEFITS OF OUR PRODUCTS-->
-  <section class="row bannerBenefits text-start">
+  <section class="row bannerBenefits text-start mt-5">
     <div class="col-12 col-lg-6 contentBenefits-text">
       <h2 class="content-benefits-title text-center">Más que una tarjeta</h2>
       <div class="row paragraph-benefits">
@@ -115,7 +120,7 @@
   </section>
 
   <!-- CUSTOMERS BRANDS CAROUSEL  -->
-  <section class="clientBrands">
+  <section class="clientBrands my-5 ">
     <div class="text-center">
       <h4>Marcas que Confian en nuestro trabajo:</h4>
     </div>
@@ -165,9 +170,9 @@
   </section>
 
   <!-- BANNER OF WHAT INCLUDES -->
-  <section class="whatIncludes">
+  <section class="whatIncludes ">
     <div class="row content-whatIncludes">
-      <div class="col-12 col-md-6 whatIncludes-img-girls">
+      <div class="col-12 col-md-6 whatIncludes-img-girls mb-3">
         <img src="../../../assets/images/3-min.png" alt="whatIncludes" />
       </div>
 
@@ -192,7 +197,7 @@
               alt="tarjetaInteligente-min"
             />
             <p class="col">
-              <b>Tarjeta inteligente con Tecnología NFC <br /></b> 
+              <b>Tarjeta inteligente con Tecnología NFC <br /></b>
               deal para networking de alto impacto.
             </p>
           </div>
@@ -203,7 +208,7 @@
               alt="web-min"
             />
             <p class="col">
-              <b>Portafolio Web - Pagína de Presentación <br /></b> 
+              <b>Portafolio Web - Pagína de Presentación <br /></b>
               Adicional un portafolio digital personalizable.
             </p>
           </div>
@@ -214,7 +219,7 @@
               alt="soporte-min"
             />
             <p class="col">
-              <b>Soporte y Actualizaciones <br /></b> 
+              <b>Soporte y Actualizaciones <br /></b>
               Actualiza tu información siempre que necesites.
             </p>
           </div>
@@ -228,21 +233,26 @@
     <div class="row">
       <div class="col-12 col-md-6 frequentQuestions-content">
         <h2 class=""><b>Preguntas Frecuentes</b></h2>
-        <div class="frequentQuestions-paragrahp">
-          <p class="">¿Qué tipo de información puedo compartir con la tarjeta?</p>
+        <div class="frequentQuestions-paragrahp rounded-pill p-3 w-100 ">
+          <p class="">
+            ¿Qué tipo de información puedo compartir con la tarjeta?
+          </p>
         </div>
-        <div class="frequentQuestions-paragrahp">
+        <div class="frequentQuestions-paragrahp rounded-pill p-3 w-100 ">
           <p class="">¿Está segura mi información con las NFContact?</p>
         </div>
-        <div class="frequentQuestions-paragrahp">
+        <div class="frequentQuestions-paragrahp rounded-pill p-3 w-100 ">
           <p class="">¿Qué otros productos o servicios ofrecen?</p>
         </div>
         <button
           type="button"
-          class="btn btn-frequentQuestions fs-5 col-12 col-lg-6"
+          class="btn btn-frequentQuestions fs-5 col-12 col-lg-4 text-start"
+          (click)="redirectFQA()"
         >
-          <i class="bi bi-caret-right-fill"></i>
-          <b>Conoce Más</b>
+        <b>
+            <i class="bi bi-caret-right-fill"></i>
+
+            Conoce Más</b>
         </button>
       </div>
     </div>

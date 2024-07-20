@@ -4,6 +4,8 @@
 
 .bannerPresentation {
   margin-top: 4rem;
+  margin-bottom: 8rem;
+  /* height: 100vh; */
 }
 
 .col-image {
@@ -21,12 +23,13 @@ img {
 .sub-title {
   font-family: "Abel", sans-serif;
   /* font-family: "Anonymous Pro", monospace; */
-  padding: 2.3rem 0 0 3rem;
+  /* padding: 2.3rem 0 0 3rem; */
+  padding: 2rem 0 0 2rem;
 }
 .paragrph-title {
   font-family: "Anonymous Pro", monospace;
   text-align: justify;
-  padding: 1rem 2rem 0 3rem;
+  padding: 1rem 2rem 0 2rem;
 }
 
 .btn1 {
@@ -36,6 +39,12 @@ img {
   border-radius: 20px;
   font-family: "Prompt", sans-serif;
 }
+
+.btn1 a{
+  color: var(--white);
+  text-decoration: none;
+}
+
 .btn2 {
   background-color: transparent;
   color: var(--gray);
@@ -157,13 +166,13 @@ img {
 }
 .frequentQuestions-paragrahp {
   background-color: var(--gray);
-  border-radius: 25px;
   margin: 1rem 2rem;
-  width: 100%;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* border-radius: 25px; */
+  /* width: 100%; */
+  /* height: 4rem; */
+  /* display: flex;
+  justify-content: start;
+  align-items: center; */
 }
 
 /* .frequentQuestions-paragrahp p{
@@ -172,7 +181,7 @@ img {
 
 .btn-frequentQuestions {
   color: var(--white);
-  width: 50%;
+  /* width: 50%; */
 }
 
 /* ----------------------------------------------------- */
@@ -182,6 +191,7 @@ img {
   /* BANNER PRESENTATION */
   .bannerPresentation {
     margin-top: 0;
+    margin-bottom: 0;
   }
   .col-image {
     padding: 0 1rem;
@@ -191,7 +201,8 @@ img {
     padding: 0 0 0 2.3rem;
   }
   .paragrph-title {
-    padding: 1rem 2rem 0 2.3rem;
+    /* padding: 1rem 2rem 0 2.3rem; */
+    padding: 1rem 1rem 0 1.3rem;
   }
 
   /* BANNER OF  WHY USE OUR PRODUCT */
@@ -265,7 +276,7 @@ img {
   }
   .frequentQuestions-paragrahp {
     padding: 3.5rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   .frequentQuestions-paragrahp p {
     margin: 0;
@@ -342,6 +353,11 @@ img {
   .content-benefits-subTitle {
     font-size: 2rem;
   }
+
+  .btn-frequentQuestions b {
+    padding-left: 1rem;
+  }
+
 }
 
 @media (min-width: 1172px) {

@@ -1,6 +1,6 @@
 <div class="container-services">
   <!----------------  seccion of title  ------------------>
-  <div class="container-title">
+  <div class="container-title pb-0">
     <h2 class="title py-3">
       <b> Ayudamos al éxito a través de la tecnología</b>
     </h2>
@@ -14,7 +14,7 @@
 
   <!----------------  seccion of cards ------------------>
 
-  <div class="row cards d-flex justify-content-center aling-items-center my-5">
+  <div class="row cards d-flex justify-content-center aling-items-center mt-0 mb-2  ">
     <div class="col-auto card card1 text-bg-dark">
       <div class="card-img-overlay">
         <h4 class="card-title text-center">
@@ -25,17 +25,6 @@
           "Impulsa tu empresa y equipo ejecutivo con productos inteligentes que
           optimizan la gestión personal.
         </p>
-
-        <button
-          class="btn dropdown-toggle rounded-pill mb-3 w-100"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseExample"
-          aria-expanded="true"
-          aria-controls="collapseExample"
-        >
-          Conoce mas
-        </button>
       </div>
     </div>
     <div class="col-auto card card2 text-bg-dark">
@@ -48,17 +37,6 @@
           Empodera tu negocio y capacita a tu equipo con nuestra consultoría en
           el uso de inteligencias artificiales.
         </p>
-
-        <button
-          class="btn dropdown-toggle rounded-pill mb-3 w-100"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseExample"
-          aria-expanded="true"
-          aria-controls="collapseExample"
-        >
-          Conoce mas
-        </button>
       </div>
     </div>
     <div class="col-auto card card3 text-bg-dark">
@@ -71,17 +49,6 @@
           "Automatiza y optimiza los procesos operativos de tu empresa con
           flujos de inteligencia artificial".
         </p>
-
-        <button
-          class="btn dropdown-toggle rounded-pill mb-3 w-100"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseExample"
-          aria-expanded="true"
-          aria-controls="collapseExample"
-        >
-          Conoce mas
-        </button>
       </div>
     </div>
   </div>
@@ -99,17 +66,22 @@
 
     <div class="d-flex justify-content-center aling-items-center mt-5">
       <button class="btn btnServices">
-        <b>Contacta con nuestro equipo</b>
+        <a
+          href="https://wa.me/+51936321753?text=Me%20gustaría%20saber%20más%20información%20sobre%20las%20tarjetas%20NFC."
+          target="_blank"
+        >
+          <b>Contacta con nuestro equipo</b>
+        </a>
       </button>
     </div>
   </div>
 
   <!----------------  seccion of products ------------------>
-  <div class="products text-center">
+  <div class="products text-center p-0">
     <!----------------  seccion of products HERADBOARD ------------------>
     <div class="row">
       <h5
-        class="col border py-2 px-5 fs-4 nfc"
+        class="col-12 col-lg border py-2 px-5 fs-4 nfc"
         [ngStyle]="this.nfContactStyle"
         (click)="
           this.nfContact = true;
@@ -120,10 +92,10 @@
           setCurrentStyles()
         "
       >
-        Tarjeta NFContac
+        Tarjeta NFContact
       </h5>
       <h5
-        class="col border py-2 px-5 fs-4 notik"
+        class="col-12 col-lg border py-2 px-5 fs-4 notik"
         [ngStyle]="this.systemNotikStyle"
         (click)="
           this.nfContact = false;
@@ -137,7 +109,7 @@
         Sistema de apuntes Notik
       </h5>
       <h5
-        class="col border py-2 px-5 fs-4 a-ia"
+        class="col-12 col-lg border py-2 px-5 fs-4 a-ia"
         [ngStyle]="this.automatitationIAStyle"
         (click)="
           this.nfContact = false;
@@ -151,7 +123,7 @@
         Automatización de procesos con I.A.
       </h5>
       <h5
-        class="col border py-2 px-5 fs-4 c-ia"
+        class="col-12 col-lg border py-2 px-5 fs-4 c-ia"
         [ngStyle]="this.consultingIAStyle"
         (click)="
           this.nfContact = false;
@@ -161,12 +133,11 @@
           this.sofwareWeb = false;
           setCurrentStyles()
         "
-        
       >
         Consultoría en herramientas de I.A.
       </h5>
       <h5
-        class="col border py-2 px-5 fs-4 web"
+        class="col-12 col-lg border py-2 px-5 fs-4 web"
         [ngStyle]="this.sofwareWebStyle"
         (click)="
           this.nfContact = false;
@@ -181,7 +152,7 @@
       </h5>
     </div>
 
-      <!----------------  seccion of products CONTENT ------------------>
+    <!----------------  seccion of products CONTENT ------------------>
     @if (nfContact) {
     <div class="row">
       <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
@@ -194,7 +165,12 @@
         </p>
         <div class="containerbtnNCF d-flex justify-content-start">
           <button class="btn btnNFC rounded-pill mb-3" type="button">
-            <b> ► Obtén la tuya </b>
+            <a
+              href="https://wa.me/+51936321753?text=Me%20gustaría%20saber%20más%20información%20sobre%20las%20tarjetas%20NFC."
+              target="_blank"
+            >
+              <b> ► Obtén la tuya </b>
+            </a>
           </button>
         </div>
       </div>
@@ -206,9 +182,7 @@
         />
       </div>
     </div>
-    } 
-    
-    @if (systemNotik) {
+    } @if (systemNotik) {
     <div class="row">
       <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
         <h2 class="my-5"><b> Sistema de apuntes NOTIK</b></h2>
@@ -219,7 +193,12 @@
         </p>
         <div class="containerbtnNCF d-flex justify-content-start">
           <button class="btn btnNFC rounded-pill mb-3" type="button">
-            <b> ► Obtén la tuya </b>
+            <a
+              href="https://wa.me/+51936321753?text=Me%20gustaría%20saber%20más%20información%20sobre%20las%20tarjetas%20NFC."
+              target="_blank"
+            >
+              <b> ► Obtén la tuya </b>
+            </a>
           </button>
         </div>
       </div>
@@ -231,9 +210,7 @@
         />
       </div>
     </div>
-    } 
-    
-    @if (automatitationIA) {
+    } @if (automatitationIA) {
     <div class="row">
       <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
         <h2 class="my-5"><b> Automatización de procesos con I.A.</b></h2>
@@ -244,7 +221,12 @@
         </p>
         <div class="containerbtnNCF d-flex justify-content-start">
           <button class="btn btnNFC rounded-pill mb-3" type="button">
-            <b> ► Obtén la tuya </b>
+            <a
+              href="https://wa.me/+51936321753?text=Me%20gustaría%20saber%20más%20información%20sobre%20las%20tarjetas%20NFC."
+              target="_blank"
+            >
+              <b> ► Contactanos </b>
+            </a>
           </button>
         </div>
       </div>
@@ -256,9 +238,7 @@
         />
       </div>
     </div>
-    } 
-    
-    @if (consultingIA) {
+    } @if (consultingIA) {
     <div class="row">
       <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
         <h2 class="my-5"><b> Consultoría en herramientas de I.A.</b></h2>
@@ -269,7 +249,12 @@
         </p>
         <div class="containerbtnNCF d-flex justify-content-start">
           <button class="btn btnNFC rounded-pill mb-3" type="button">
-            <b> ► Obtén la tuya </b>
+            <a
+              href="https://wa.me/+51936321753?text=Me%20gustaría%20saber%20más%20información%20sobre%20las%20tarjetas%20NFC."
+              target="_blank"
+            >
+              <b> ► Contactanos </b>
+            </a>
           </button>
         </div>
       </div>
@@ -281,9 +266,7 @@
         />
       </div>
     </div>
-    } 
-    
-    @if (sofwareWeb) {
+    } @if (sofwareWeb) {
     <div class="row">
       <div class="col-12 col-lg-6 my-auto px-4 container-content-product">
         <h2 class="my-5"><b> Proyectos de Software & Web</b></h2>
@@ -294,7 +277,12 @@
         </p>
         <div class="containerbtnNCF d-flex justify-content-start">
           <button class="btn btnNFC rounded-pill mb-3" type="button">
-            <b> ► Obtén la tuya </b>
+            <a
+              href="https://wa.me/+51936321753?text=Me%20gustaría%20saber%20más%20información%20sobre%20las%20tarjetas%20NFC."
+              target="_blank"
+            >
+              <b> ► Contactanos </b>
+            </a>
           </button>
         </div>
       </div>
@@ -307,12 +295,13 @@
       </div>
     </div>
     }
-
   </div>
 
   <!----------------  seccion of IMPACT ------------------>
-  <div class="row conatiner-stadistic">
-    <h2 class="col-12 col-lg-8 text-start"><b>Impacto real en nuestros clientes.</b></h2>
+  <div class="row conatiner-stadistic pt-5">
+    <h2 class="col-12 col-lg-8 text-start">
+      <b>Impacto real en nuestros clientes.</b>
+    </h2>
     <p class="col-12 col-lg-8">
       Revolucionamos la forma en que las empresas se conectan y crecen, a través
       de nuestros productos y servicios.
@@ -321,7 +310,7 @@
 
   <!----------------  seccion of stadistics ------------------>
   <div class="conatiner-stadistic-number">
-    <div class="row numbers">
+    <div class="row numbers py-5">
       <div class="col border-start border-5">
         <h3 class=""><b> 20 +</b></h3>
         <p class="">Empresas afiliadas</p>

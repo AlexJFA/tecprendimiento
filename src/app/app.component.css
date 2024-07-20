@@ -1,5 +1,6 @@
 @import url("../styles.css");
 
+
 /* ----  HEADER - NAVBAR ----- */
 header {
   padding: 0;
@@ -13,6 +14,15 @@ header {
 
 .navbar-brand {
   color: var(--white);
+}
+
+.navbar-toggler{
+  color: var(--white);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color: #3B3B3B;
+
 }
 
 .title {

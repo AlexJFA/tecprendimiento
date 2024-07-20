@@ -1,24 +1,34 @@
 import { Component } from '@angular/core';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [SlickCarouselModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  constructor(private _router: Router) {}
 
-   /**
+  redirectServices() {
+    this._router.navigateByUrl('/services');
+  }
+
+  redirectFQA(){
+    this._router.navigateByUrl('/fqa');
+  }
+
+  /**
    * Array of slides for the first carousel.
    */
-   public slides = [
+  public slides = [
     { img: '../../../assets/images/Logos/Lunika.png' },
     { img: '../../../assets/images/Logos/OdontoMigue.png' },
     { img: '../../../assets/images/Logos/Alactus.png' },
     { img: '../../../assets/images/Logos/Agathos .png' },
-    { img: '../../../assets/images/Logos/ms-consulting.png'},
+    { img: '../../../assets/images/Logos/ms-consulting.png' },
     { img: '../../../assets/images/Logos/frank-Adam.png' },
     { img: '../../../assets/images/Logos/denaro.png' },
     { img: '../../../assets/images/Logos/HIAS.png' },
@@ -65,6 +75,4 @@ export class HomeComponent {
       },
     ],
   };
-
-
 }
