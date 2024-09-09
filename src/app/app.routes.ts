@@ -7,6 +7,11 @@ import { BlogComponent } from './components/blog/blog.component';
 
 export const routes: Routes = [
   {
+    path: '',
+    title: 'Home',
+    component: HomeComponent,
+  },
+  {
     path: 'home',
     title: 'Home',
     component: HomeComponent,
@@ -30,5 +35,10 @@ export const routes: Routes = [
     path: 'blog',
     title: 'Blog',
     component: BlogComponent,
+  },
+  {
+    path: '**',
+    title: 'home',
+    component: HomeComponent,
   },
 ];
